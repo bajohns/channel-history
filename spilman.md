@@ -4,6 +4,8 @@ Spilman payment channels [original source](https://lists.linuxfoundation.org/pip
 2 <Alice's pubkey> <Bob's pubkey> 2 OP_CHECKMULTISIG
 ```
 
+![sequence](./images/generated/spilman.png "sequence")
+
 ```mermaid
 sequenceDiagram
   participant A as Alice

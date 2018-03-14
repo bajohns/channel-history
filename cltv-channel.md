@@ -5,6 +5,17 @@
 * Sidesteps malleability using p2sh address
 * Requires negotiation of refund timeout
 
+```
+IF
+    2 <Alice's pubkey> <Bob's pubkey> 2 CHECKMULTISIG
+ELSE
+    <now + refund timeout> CHECKLOCKTIMEVERIFY DROP
+    <Alice's pubkey> CHECKSIG
+ENDIF
+```
+
+![sequence](./images/generated/cltv.png "sequence")
+
 ```mermaid
 sequenceDiagram
   participant A as Alice
