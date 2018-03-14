@@ -1,4 +1,4 @@
-##### CheckLockTimeVerify channel
+##### CheckLockTimeVerify channels
 
 * Unidirectional from Alice to Bob
 * Required CLTV (BIP-65)

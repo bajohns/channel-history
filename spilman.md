@@ -1,8 +1,8 @@
 Spilman payment channels [original source](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002433.html)
 
-* Unidirectional from Alice to Bob
-* Expects to use nSequence
-* Affected by malleability
+```
+2 <Alice's pubkey> <Bob's pubkey> 2 OP_CHECKMULTISIG
+```
 
 ```mermaid
 sequenceDiagram
@@ -38,3 +38,6 @@ sequenceDiagram
   Note over A,C: Channel Close
   B->>C: Sign & Broadcast Latest T3
 ```
+
+* Unidirectional from Alice to Bob
+* Affected by malleability
